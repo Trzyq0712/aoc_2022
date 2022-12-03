@@ -1,3 +1,5 @@
+#![feature(iter_array_chunks)]
+
 use std::env::args;
 
 mod solvs;
