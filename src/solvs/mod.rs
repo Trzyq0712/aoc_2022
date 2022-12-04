@@ -4,6 +4,7 @@ use std::fs::read_to_string;
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 
 pub trait Solution {
     fn file_name(&self) -> &'static str;
@@ -20,6 +21,7 @@ pub fn get_solution(day: u32) -> Option<Box<dyn Solution>> {
         1 => Some(Box::new(day1::Day1)),
         2 => Some(Box::new(day2::Day2)),
         3 => Some(Box::new(day3::Day3)),
+        4 => Some(Box::new(day4::Day4)),
         _ => None,
     }
 }
